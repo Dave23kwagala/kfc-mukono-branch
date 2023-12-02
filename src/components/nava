@@ -1,0 +1,76 @@
+// Navbar.jsx
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { FaShoppingCart } from 'react-icons/fa'; // Import the cart icon
+
+const Navbar = () => {
+  return (
+    <nav className="navbar" style={navbarStyle}>
+      <div className="navbar-container">
+        <Link to="/" className="navbar-brand" style={brandStyle}>
+          KFC 
+        </Link><bold>Mukono Branch</bold>
+
+        <ul className="navbar-nav" style={navListStyle}>
+          <li className="nav-item">
+            <Link to="/about-us" className="nav-link" style={linkStyle}>
+              About Us
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/contact" className="nav-link" style={linkStyle}>
+              Contact
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/login" className="nav-link" style={linkStyle}>
+              Login
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/menu" className="nav-link" style={linkStyle}>
+              Our Menu
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/cart" className="nav-link" style={linkStyle}>
+              <FaShoppingCart /> {/* Display the cart icon */}
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  );
+};
+
+// Internal CSS styles
+const navbarStyle = {
+  background: 'red',
+  padding: '20px',
+  borderBottom: '2px solid white',
+  display: 'flex',
+  justifyContent: 'space-between',
+  alignItems: 'center',
+  height: '10vh', // Adjusted height for the navbar
+  width: '194vh', // Include padding and border in the total height
+};
+
+const brandStyle = {
+  color: 'white',
+  textDecoration: 'none',
+  fontSize: '3.5rem',
+};
+
+const navListStyle = {
+  listStyle: 'none',
+  display: 'flex',
+  gap: '80px',
+  fontSize: '1rem',
+};
+
+const linkStyle = {
+  color: 'white',
+  textDecoration: 'none',
+};
+
+export default Navbar;

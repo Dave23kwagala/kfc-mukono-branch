@@ -1,0 +1,93 @@
+/* MenuDisplay.css */
+
+.menu-display {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  font-family: 'Arial', sans-serif;
+  background-image: url('https://prestigehotelsuites.com/visiting-kampala-uganda/wp-content/uploads/2019/01/Food_Pizza_Delicious_pizza_029580_.jpg');
+  background-size: cover; /* Ensure the background image covers the entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  background: rgb(248, 153, 2)
+}
+
+.menu-item {
+  border: 1px solid #f70404;
+  padding: 10px;
+  border-radius: 8px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+}
+
+.menu-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.menu-item h3 {
+  margin: 10px 0;
+  color: #000000;
+}
+
+.menu-item p {
+  color: #666;
+}
+
+.menu-item button {
+  background-color: #c70000;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menu-item button:hover {
+  background-color: #911212;
+}
+
+.order-summary {
+  margin-top: 20px;
+  padding: 50px;
+  background-color: #fe9f39;
+  border-radius: 40px;
+  box-shadow: 5 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-summary h3 {
+  color: #070707;
+  font-size: 35px;
+}
+
+.order-summary ul {
+  list-style: none;
+  padding: 0;
+}
+
+.order-summary li {
+  margin: 5px 0;
+  color: #0531f5;
+  font-size: 20px;
+}
+
+.order-summary .total {
+  font-weight: bold;
+  color: #fc0404;
+  font-size: 35px;
+}
